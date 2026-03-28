@@ -1,0 +1,30 @@
+# Python bytecode / caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local env / editor
+.venv/
+.DS_Store
+.idea/
+.vscode/
+
+# Generated data and local state
+output/
+outputs/
+logs/
+archive/
+raw/*.rar
+raw/ftp_probe*/
+raw/html_snapshots/
+raw/sample_extract/
+output/playwright/
+.playwright-cli/
+
+# Large or sensitive artifacts
+*.state.json
+*.log

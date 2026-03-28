@@ -1,0 +1,16 @@
+GitHub release snapshot
+
+Included:
+- scripts/
+- README.md
+- requirements.txt
+- configs/default.json
+- sample raw CSVs
+- sample/demo outputs
+
+Excluded:
+- full raw archives
+- full outputs
+- logs
+- login/session state
+- archive/

@@ -1,0 +1,31 @@
+{
+  "browser": {
+    "headless": false,
+    "user_agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36"
+  },
+  "crawl": {
+    "base_url": "http://epub.cnipa.gov.cn",
+    "wait_timeout_ms": 30000,
+    "inter_request_min_seconds": 0.8,
+    "inter_request_max_seconds": 2.5,
+    "retry_count": 2,
+    "page_size": 100,
+    "fallback_terms": [
+      "未缴年费终止",
+      "恢复权利",
+      "视为放弃",
+      "专利权终止",
+      "年费",
+      "终止"
+    ]
+  },
+  "official_query": {
+    "base_url": "https://cpquery.cponline.cnipa.gov.cn/chinesepatent/index",
+    "login_url_contains": "tysf.cponline.cnipa.gov.cn/am/#/user/login",
+    "wait_timeout_ms": 30000,
+    "inter_request_min_seconds": 0.8,
+    "inter_request_max_seconds": 2.5,
+    "retry_count": 2,
+    "wait_for_login_seconds": 0
+  }
+}

@@ -1,0 +1,8 @@
+playwright>=1.58,<2
+pandas>=2.3,<3
+beautifulsoup4>=4.14,<5
+lxml>=6.0,<7
+requests>=2.32,<3
+cnloc>=0.1.7,<0.2
+xlrd>=2.0.1,<3
+curl_cffi>=0.13.0
