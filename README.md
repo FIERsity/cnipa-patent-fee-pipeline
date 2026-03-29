@@ -129,7 +129,7 @@
 
 现在仓库里同时提供了一个更快的纯 HTTP 版本，它不再打开详情页，也不再依赖浏览器 tab：
 
-- [`scripts/fetch_patentstar_legal_status_http.py`](/Volumes/DataHub/Dev/TRY/scripts/fetch_patentstar_legal_status_http.py)
+- [`scripts/fetch_patentstar_legal_status_http.py`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/scripts/fetch_patentstar_legal_status_http.py)
 
 这个版本需要先导出一次已登录会话的 storage state：
 
@@ -142,7 +142,7 @@ PY
 
 或直接复用当前已保存的：
 
-- [`output/playwright/patentstar_state.json`](/Volumes/DataHub/Dev/TRY/output/playwright/patentstar_state.json)
+- [`output/playwright/patentstar_state.json`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/output/playwright/patentstar_state.json)
 
 建议默认优先使用纯 HTTP 版：
 
@@ -220,7 +220,7 @@ logs/
 
 仓库里已经生成了地级市主数据：
 
-- [`raw/reference/prefecture_level_cities.csv`](/Volumes/DataHub/Dev/TRY/raw/reference/prefecture_level_cities.csv)
+- [`raw/reference/prefecture_level_cities.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/raw/reference/prefecture_level_cities.csv)
 
 字段包括：
 
@@ -313,7 +313,7 @@ python scripts/build_city_patent_panel.py \
 
 模板文件：
 
-- [`raw/patent_master_template.csv`](/Volumes/DataHub/Dev/TRY/raw/patent_master_template.csv)
+- [`raw/patent_master_template.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/raw/patent_master_template.csv)
 
 研究上建议优先使用：
 
@@ -327,7 +327,7 @@ python scripts/build_city_patent_panel.py \
 
 样例面板也已经落盘：
 
-- [`outputs/city_patent_panel_pss_demo.csv`](/Volumes/DataHub/Dev/TRY/outputs/city_patent_panel_pss_demo.csv)
+- [`outputs/city_patent_panel_pss_demo.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/city_patent_panel_pss_demo.csv)
 
 它展示了如何从 `pss-system` 主表样例中，通过申请人名称规则推断地级市并生成 city-year 面板。
 - `fee_nonpayment_excluded_patent_count`
@@ -490,10 +490,10 @@ python scripts/fetch_cnipa_cpquery_status.py \
 
 当前仓库里已经落了以下可复核样例：
 
-- [`outputs/patent_master_ftp_demo.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_master_ftp_demo.csv)
-- [`outputs/patent_legal_events_ftp_demo.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_legal_events_ftp_demo.csv)
-- [`outputs/patent_fee_inference_ftp_demo.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_fee_inference_ftp_demo.csv)
-- [`outputs/city_patent_panel_ftp_demo.csv`](/Volumes/DataHub/Dev/TRY/outputs/city_patent_panel_ftp_demo.csv)
+- [`outputs/patent_master_ftp_demo.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_master_ftp_demo.csv)
+- [`outputs/patent_legal_events_ftp_demo.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_legal_events_ftp_demo.csv)
+- [`outputs/patent_fee_inference_ftp_demo.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_fee_inference_ftp_demo.csv)
+- [`outputs/city_patent_panel_ftp_demo.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/city_patent_panel_ftp_demo.csv)
 
 这些样例来自 FTP 原始分片的真数据，不是手工模拟。
 
@@ -501,12 +501,12 @@ python scripts/fetch_cnipa_cpquery_status.py \
 
 当前全量抓取已经生成：
 
-- [`outputs/patent_master_ftp_full.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_master_ftp_full.csv)
-- [`outputs/patent_legal_events_ftp_full.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_legal_events_ftp_full.csv)
-- [`outputs/patent_fee_inference_ftp_full.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_fee_inference_ftp_full.csv)
-- [`outputs/city_patent_panel_ftp_full.csv`](/Volumes/DataHub/Dev/TRY/outputs/city_patent_panel_ftp_full.csv)
-- [`outputs/city_patent_panel_rar_full.csv`](/Volumes/DataHub/Dev/TRY/outputs/city_patent_panel_rar_full.csv)
-- [`outputs/patent_fee_unmatched_to_rar_full.csv`](/Volumes/DataHub/Dev/TRY/outputs/patent_fee_unmatched_to_rar_full.csv)
+- [`outputs/patent_master_ftp_full.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_master_ftp_full.csv)
+- [`outputs/patent_legal_events_ftp_full.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_legal_events_ftp_full.csv)
+- [`outputs/patent_fee_inference_ftp_full.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_fee_inference_ftp_full.csv)
+- [`outputs/city_patent_panel_ftp_full.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/city_patent_panel_ftp_full.csv)
+- [`outputs/city_patent_panel_rar_full.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/city_patent_panel_rar_full.csv)
+- [`outputs/patent_fee_unmatched_to_rar_full.csv`](/Volumes/DataHub/Dev/cnipa-patent-status-pipeline/outputs/patent_fee_unmatched_to_rar_full.csv)
 
 全量规模：
 
